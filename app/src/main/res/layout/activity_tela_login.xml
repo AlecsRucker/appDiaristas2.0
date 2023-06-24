@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLogin">
+
+    <TextView
+        android:id="@+id/VamosComeçar"
+        android:layout_width="275dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Olá"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="324dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:enabled="true"
+        android:clickable="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Senha:"
+        android:inputType="textPassword|number"
+        android:focusable="true"
+        android:enabled="true"
+        android:clickable="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/entrar"
+        android:layout_width="261dp"
+        android:layout_height="67dp"
+        android:text="ENTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
+        android:id="@+id/bt_cadastro"
+        android:layout_width="258dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:text="CADASTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/senhaEsqueceu"
+        android:layout_width="260dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:text="ESQUECI MINHA SENHA"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
